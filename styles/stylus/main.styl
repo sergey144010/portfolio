@@ -1,0 +1,186 @@
+html, body, h1, p, a, div, section
+  margin: 0
+  padding: 0
+
+@font-face
+    font-family: Donpoligrafbum
+    src: url("../font/Donpoligrafbum-Bold.otf") format("opentype")
+
+.front-container
+    width: 100%
+    height: 100%
+    background-image: url("../image/3200_1800.jpg")
+    @media screen and (max-width: 1920px)
+        background-image: url("../image/1920_1080.jpg")
+    @media screen and (max-width: 960px)
+        background-image: url("../image/980_551.jpg")
+    @media screen and (max-width: 480px)
+        background-image: url("../image/480_270.jpg")
+    background-position: center center
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    background-color: #464646
+
+
+
+.block_top
+    display: block
+    font-size: 14px
+    padding-top: 1%
+    padding-right: 3%
+    text-align: right
+
+.menu
+    display: inline
+    text-align: center
+    padding-left: 5px
+    padding-right: 5px
+    outline: none
+    text-decoration: none
+.menu:hover
+    text-decoration: underline
+.menu:visited
+    color: whitesmoke
+.menu:active
+    color: whitesmoke
+
+.block_center
+    padding-top: 18%
+    padding-left: 5%
+
+.hello
+    font-family: Donpoligrafbum, serif
+    font-size: 25px
+    color: whitesmoke
+    padding-bottom: 10px
+
+.h1
+    font-family: Donpoligrafbum, serif
+    font-size: 72px
+    color: #51e2f5
+
+.on
+    font-family: Donpoligrafbum, serif
+    font-size: 25px
+    color: whitesmoke
+.on_small
+    font-family: Donpoligrafbum, serif
+    font-size: 25px
+    color: #51e2f5
+    padding-top: 10px
+
+.tag
+    color: whitesmoke
+    font-family: SansSerif, sans-serif
+
+.tag::before
+    content: "#"
+
+.tag:hover
+    text-decoration: underline
+
+.tag:hover > .tooltip-text
+    display: block
+    visibility: visible
+    opacity: 1
+
+.tooltip-text
+    font-family: "PT Sans", sans-serif
+    background-color: #464646
+    color: #FFFFFF
+    font-size: 16px
+    line-height: 20px
+    font-weight: 400
+    text-transform: none
+    padding: 20px 18px 18px 22px
+    border-radius: 10px
+    width: 512px
+    position: absolute
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    left: 30%
+    z-index: 0
+    visibility: hidden
+    opacity: 0
+    transition: visibility 0s, opacity 0.5s linear
+
+.block_tags
+    margin-top: 3%
+    padding-left: 5%
+.block_scroll
+    display: block
+    color: whitesmoke
+    margin-top: 6%
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    line-height: 30px
+    border: 1px solid whitesmoke
+    border-radius: 10px
+    width: 150px
+    height: 30px
+    text-transform: uppercase
+    font-size: 12px
+
+.page-container
+    width: 100%
+    height: 100%
+
+.category-header
+    margin-top: 3%
+    margin-bottom: 3%
+    font-family: Donpoligrafbum, serif
+    font-size: 25px
+    padding-left: 5%
+    color: #2a2a2a
+.category
+    font-family: Donpoligrafbum, serif
+    font-size: 25px
+    padding-left: 5%
+    margin-bottom: 3%
+    color: #2a2a2a
+.category-text
+    font-family: SansSerif, sans-serif
+    font-size: 18px
+    padding-top: 5px
+    color: #2a2a2a
+.category-text > p
+    margin-bottom: 10px
+
+.footer
+    width: 100%
+    height: 100px
+    bottom: 0
+    display: flex
+    line-height: 100px
+    background-image: url("../image/3200_1800.jpg")
+    @media screen and (max-width: 1920px)
+        background-image: url("../image/1920_1080.jpg")
+    @media screen and (max-width: 960px)
+        background-image: url("../image/980_551.jpg")
+    @media screen and (max-width: 480px)
+        background-image: url("../image/480_270.jpg")
+    background-position: center center
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+.contact-header
+    display: inline
+    color: whitesmoke
+    font-family: Donpoligrafbum, serif
+    font-size: 25px
+    padding-left: 5%
+    padding-right: 17px
+.contact-item
+    display: inline
+    color: #51e2f5
+    font-family: Donpoligrafbum, serif
+    font-size: 25px
+    text-decoration: none
+    padding-left: 17px
+    padding-right: 17px
+.contact-item:hover
+    text-decoration: underline
